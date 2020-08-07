@@ -58,7 +58,7 @@ type Post struct {
 func main() {
 	fmt.Println("started-service")
 
-	//use the same signingmethod and signing key to decode
+	//use the same signing method and signing key to decode
 	jwtMiddleware := jwtmiddleware.New(jwtmiddleware.Options{
 		ValidationKeyGetter: func(token *jwt.Token) (interface{}, error) {
 			return []byte(mySigningKey), nil
