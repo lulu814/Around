@@ -1,0 +1,9 @@
+/*0 auto: 自然居中*/
+.login-form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login-form-button {
+    width: 300px;
+}
